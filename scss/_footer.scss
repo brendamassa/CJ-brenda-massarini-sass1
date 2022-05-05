@@ -2,13 +2,17 @@ footer{
     font-family: 'Teko', sans-serif;
     background-color: $titulo;
     color: $lethover;
+
     
-    .bi{
-        color: $btn;
-        &:hover{
-            color: $lethover
-        } 
+    
+    @each $red, $color in $redes{
+        .bi-#{$red}{
+            color: $color;
+        }
     }
+    
+    
     
 
 }
+
