@@ -3,17 +3,32 @@ footer{
     background-color: $negro;
     color: $bco;
 
-    
-    .bi-{
+    @mixin iconosredes($hover){
         color: $bco;
-    
-    @each $red, $color in $redes{
-        &:hover#{$red}{
-            color: $color;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+
+        &:hover{
+            color: $hover;
         }
     }
-    
+
+    .bi-instagram{
+        @include iconosredes($instagram);
     }
+    .bi-whatsapp{
+        @include iconosredes($whatsapp);
+    }
+    .bi-spotify{
+        @include iconosredes($spotify);
+    }
+    .bi-envelope{
+        @include iconosredes($envelope);
+    }
+  
+
     
 
 }
