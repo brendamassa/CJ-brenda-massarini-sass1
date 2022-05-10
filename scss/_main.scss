@@ -1,25 +1,73 @@
 main{
     font-family: 'Ubuntu', sans-serif;
-    background-color: $bg;
+        .ingresos{
+            background-color: $bg;
+        }
+        .info{
+            background-color: $bg;
+        }
+    
         h2{
-            color: $titulo;
+            color: $negro;
         }
         h5{
-            color: $titulo;
+            color: $negro;
         }
         p{
-            color: $letrap
+            color: $gris
         }
         .btn{
-            color: $titulo;
-            background-color: $btn;
-            border-color: $btn;
+            color: $negro;
+            background-color: $nar;
+            border-color: $nar;
          
             &:hover{
-                color: $lethover;
-                background-color: $titulo;
-                border-color: $letrap;
+                color: $negro;
+                background-color: $negro;
+                border-color: $bco;
     
             }
         }    
+        .contenedor2{
+            display: grid;
+            grid-template-columns: 2fr*4;
+            grid-template-rows: 3fr*4;
+            grid-template-areas:
+             "rem1 rem2 rem3 rem4"
+             "rem5 rem6 rem7 rem8"
+             "rem9 rem10 rem11 rem12"
+             "rem13 rem14 rem15 rem16"
+        }
+        .rem1{
+            grid-area: rem1;
+            width: 25vw;
+        }
+        .rem2{
+            grid-area: rem2;
+            width: 25vw;
+        }
+        .rem3{
+            grid-area: rem3;
+            width: 25vw;
+        }
+        .rem4{
+            grid-area: rem4;
+            width: 25vw;
+        }
+        .rem5{
+            grid-area: rem5;
+            width: 25vw;
+        }
+        .rem6{
+            grid-area: rem6;
+            width: 25vw;
+        }
+        .rem7{
+            grid-area: rem7;
+            width: 25vw;
+        }
+        .rem8{
+            grid-area: rem8;
+            width: 25vw;
+        }
     }

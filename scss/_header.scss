@@ -1,8 +1,18 @@
 header{
     font-family: 'Teko', sans-serif;
+    h1{
+        background-color: $negro;
+        color: $bco;
+        text-align: center;
+    }
+    .navbar{
+        background-color: $negro !important;
+        opacity: 90%;
+        height: 4rem;
+    }
     .nav-link{
         &:hover{
-            background-color: $btn;
+            background-color: $nar;
         }
 
     }

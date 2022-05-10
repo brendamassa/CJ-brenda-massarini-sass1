@@ -1,17 +1,19 @@
 footer{
     font-family: 'Teko', sans-serif;
-    background-color: $titulo;
-    color: $lethover;
+    background-color: $negro;
+    color: $bco;
 
     
+    .bi-{
+        color: $bco;
     
     @each $red, $color in $redes{
-        .bi-#{$red}{
+        &:hover#{$red}{
             color: $color;
         }
     }
     
-    
+    }
     
 
 }

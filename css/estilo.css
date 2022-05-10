@@ -1,6 +1,9 @@
 main {
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #f7d6c0; }
+  font-family: 'Ubuntu', sans-serif; }
+  main .ingresos {
+    background-color: #f7d6c0; }
+  main .info {
+    background-color: #f7d6c0; }
   main h2 {
     color: #000000; }
   main h5 {
@@ -12,12 +15,49 @@ main {
     background-color: #f37547;
     border-color: #f37547; }
     main .btn:hover {
-      color: #f5f5f5;
+      color: #000000;
       background-color: #000000;
-      border-color: #1d1d1c; }
+      border-color: #f5f5f5; }
+  main .contenedor2 {
+    display: grid;
+    grid-template-columns: 8fr;
+    grid-template-rows: 12fr;
+    grid-template-areas: "rem1 rem2 rem3 rem4" "rem5 rem6 rem7 rem8" "rem9 rem10 rem11 rem12" "rem13 rem14 rem15 rem16"; }
+  main .rem1 {
+    grid-area: rem1;
+    width: 25vw; }
+  main .rem2 {
+    grid-area: rem2;
+    width: 25vw; }
+  main .rem3 {
+    grid-area: rem3;
+    width: 25vw; }
+  main .rem4 {
+    grid-area: rem4;
+    width: 25vw; }
+  main .rem5 {
+    grid-area: rem5;
+    width: 25vw; }
+  main .rem6 {
+    grid-area: rem6;
+    width: 25vw; }
+  main .rem7 {
+    grid-area: rem7;
+    width: 25vw; }
+  main .rem8 {
+    grid-area: rem8;
+    width: 25vw; }
 
 header {
   font-family: 'Teko', sans-serif; }
+  header h1 {
+    background-color: #000000;
+    color: #f5f5f5;
+    text-align: center; }
+  header .navbar {
+    background-color: #000000 !important;
+    opacity: 90%;
+    height: 4rem; }
   header .nav-link:hover {
     background-color: #f37547; }
 
@@ -25,11 +65,13 @@ footer {
   font-family: 'Teko', sans-serif;
   background-color: #000000;
   color: #f5f5f5; }
-  footer .bi-instagram {
-    color: #3f729b; }
-  footer .bi-whatsapp {
-    color: #43d854; }
-  footer .bi-spotify {
-    color: #00e461; }
-  footer .bi-envelope {
-    color: #ea4335; }
+  footer .bi- {
+    color: #f5f5f5; }
+    footer .bi-:hoverinstagram {
+      color: #3f729b; }
+    footer .bi-:hoverwhatsapp {
+      color: #43d854; }
+    footer .bi-:hoverspotify {
+      color: #00e461; }
+    footer .bi-:hoverenvelope {
+      color: #ea4335; }
